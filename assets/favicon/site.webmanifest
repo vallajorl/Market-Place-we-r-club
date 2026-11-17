@@ -1,0 +1,16 @@
+{
+  "name": "we'r club",
+  "short_name": "we'r club",
+  "description": "La app de tu club: material, socios, cuotas y avisos.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#FF9500",
+  "theme_color": "#1C1B19",
+  "icons": [
+    { "src": "/assets/favicon/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/favicon/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/assets/favicon/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "/assets/favicon/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

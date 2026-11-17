@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crea tu club — we'r club</title>
+  <meta name="description" content="Crea tu club en we'r club en 2 minutos. Sin tarjeta, con 30 días gratis. Te mandamos el enlace mágico al email.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#FF9500">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="we'r club">
+  <meta property="og:image" content="https://werclub.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="1000">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="/" class="nav__logo">
+      <span class="nav__logo-badge">wc</span>
+      <span class="nav__logo-text"><b>we'r</b> <span>club</span></span>
+    </a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/producto/">Producto</a></li>
+        <li><a href="/para-clubs/">Para clubs</a></li>
+        <li><a href="/precios/">Precios</a></li>
+        <li><a href="/entrar/">Entrar</a></li>
+      </ul>
+    </nav>
+    <div class="nav__cta">
+      <a href="/entrar/" class="btn btn--link">Entrar</a>
+      <button class="nav__toggle" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="alta">
+  <div class="container alta__grid">
+
+    <aside class="alta__aside">
+      <span class="chip">Alta gratis</span>
+      <h1 class="alta__title">Monta tu <em>club</em><br>en dos minutos.</h1>
+      <p class="alta__lead">Rellena los datos, te mandamos un enlace mágico al email y entras. Sin tarjeta, sin instalar nada.</p>
+      <ul class="alta__bullets">
+        <li>30 días de prueba sin tarjeta.</li>
+        <li>Importa tu Excel de socios después.</li>
+        <li>Invita a la junta con un enlace.</li>
+        <li>Puedes cancelar cuando quieras.</li>
+      </ul>
+      <div class="alta__trust">
+        <span class="alta__trust-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <div class="alta__trust-body">
+          <b>Tus datos, tuyos.</b>
+          Alojados en servidores europeos. Puedes exportarlo todo cuando quieras.
+        </div>
+      </div>
+    </aside>
+
+    <form class="alta__form" id="alta-form" novalidate>
+
+      <div class="alta__form-section">
+        <span class="alta__form-eyebrow">Tu club</span>
+
+        <div class="field">
+          <label for="f-club-name">Nombre del club <span aria-hidden="true" style="color:var(--c-orange)">*</span></label>
+          <input type="text" id="f-club-name" name="club_name" required placeholder="Club de Montaña Ejemplo" autocomplete="organization">
+        </div>
+
+        <div class="alta__field-row">
+          <div class="field">
+            <label for="f-club-type">Tipo <span aria-hidden="true" style="color:var(--c-orange)">*</span></label>
+            <select id="f-club-type" name="club_type" required>
+              <option value="">Elige...</option>
+              <option value="montana">Montaña y naturaleza</option>
+              <option value="deportivo">Deportivo</option>
+              <option value="cultural">Peña y cultural</option>
+              <option value="vecinal">Vecinal</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-club-size">Número aproximado de socios <span aria-hidden="true" style="color:var(--c-orange)">*</span></label>
+            <select id="f-club-size" name="club_size" required>
+              <option value="">Elige...</option>
+              <option value="xs">Menos de 30</option>
+              <option value="s">30 a 80</option>
+              <option value="m">80 a 150</option>
+              <option value="l">Más de 150</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-club-city">Localidad</label>
+          <input type="text" id="f-club-city" name="club_city" placeholder="Cangas del Narcea" autocomplete="address-level2">
+        </div>
+      </div>
+
+      <div class="alta__form-section">
+        <span class="alta__form-eyebrow">Tú</span>
+
+        <div class="alta__field-row">
+          <div class="field">
+            <label for="f-name">Nombre y apellidos <span aria-hidden="true" style="color:var(--c-orange)">*</span></label>
+            <input type="text" id="f-name" name="name" required placeholder="Jorge Valla" autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="f-role">Cargo en el club <span aria-hidden="true" style="color:var(--c-orange)">*</span></label>
+            <select id="f-role" name="role" required>
+              <option value="">Elige...</option>
+              <option value="tesoreria">Tesorería</option>
+              <option value="presidencia">Presidencia</option>
+              <option value="secretaria">Secretaría</option>
+              <option value="junta">Junta directiva</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="f-email">Email <span aria-hidden="true" style="color:var(--c-orange)">*</span></label>
+          <input type="email" id="f-email" name="email" required placeholder="jorge@tuclub.es" autocomplete="email">
+          <p class="field__hint">Te mandamos aquí el enlace para entrar al club. Nada de spam.</p>
+        </div>
+
+        <div class="field">
+          <label for="f-phone">Teléfono (opcional)</label>
+          <input type="tel" id="f-phone" name="phone" placeholder="+34 600 00 00 00" autocomplete="tel">
+        </div>
+      </div>
+
+      <div class="alta__form-section">
+        <span class="alta__form-eyebrow">Plan</span>
+
+        <div class="field">
+          <label for="f-plan">Empieza con el plan…</label>
+          <select id="f-plan" name="plan">
+            <option value="pena">Peña · hasta 30 socios</option>
+            <option value="club" selected>Club · hasta 150 socios (recomendado)</option>
+            <option value="federacion">Federación · hablamos antes</option>
+          </select>
+          <p class="field__hint">Puedes cambiar de plan cuando quieras. Los 30 días de prueba son iguales para todos.</p>
+        </div>
+
+        <div class="field field--check">
+          <input type="checkbox" id="f-rgpd" name="rgpd" required>
+          <label for="f-rgpd">He leído y acepto la <a href="/legal/privacidad/">política de privacidad</a> y las <a href="/legal/condiciones/">condiciones de uso</a>.</label>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn--primary alta__submit">Crear el club y enviarme el enlace</button>
+
+      <div class="alta__error" id="alta-error" role="alert"></div>
+      <div class="alta__success" id="alta-success" role="status"></div>
+
+      <p class="alta__disclaimer">Al crear el club empieza tu prueba gratuita de 30 días. No se te cobra nada.</p>
+    </form>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__row">
+    <a href="/" class="nav__logo site-footer__logo">
+      <span class="nav__logo-badge">wc</span>
+      <span><b>we'r</b> club</span>
+    </a>
+    <ul class="site-footer__links">
+      <li><a href="/legal/privacidad/">Privacidad</a></li>
+      <li><a href="/legal/condiciones/">Condiciones</a></li>
+      <li><a href="/legal/contacto/">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/nav.js" defer></script>
+<script src="../js/alta.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Revisa tu email — we'r club</title>
+  <meta name="description" content="Ya tienes el enlace mágico en tu correo. Ábrelo para entrar al panel de tu club.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#FF9500">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="we'r club">
+  <meta property="og:image" content="https://werclub.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="1000">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap">
+  <link rel="stylesheet" href="../../css/main.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="/" class="nav__logo">
+      <span class="nav__logo-badge">wc</span>
+      <span class="nav__logo-text"><b>we'r</b> <span>club</span></span>
+    </a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/producto/">Producto</a></li>
+        <li><a href="/para-clubs/">Para clubs</a></li>
+        <li><a href="/precios/">Precios</a></li>
+        <li><a href="/entrar/">Entrar</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="sent">
+  <div class="container sent__wrap">
+    <span class="sent__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v12H4z"/><path d="M4 7l8 7 8-7"/></svg>
+    </span>
+    <h1 class="sent__title">Revisa tu <em>email</em>.</h1>
+    <p class="sent__lead">Hemos mandado un enlace a <span class="sent__email" id="sent-email">tu correo</span>. Ábrelo para entrar al panel de tu club. El enlace es válido durante <b>una hora</b>.</p>
+
+    <div class="sent__steps">
+      <h2>¿No ha llegado?</h2>
+      <ol>
+        <li><div><b>Espera un minuto.</b> A veces los correos se cruzan.</div></li>
+        <li><div><b>Mira en spam o promociones.</b> Algunos clientes de correo lo filtran al principio.</div></li>
+        <li><div><b>Comprueba que el email es correcto.</b> Tiene que ser el mismo con el que te invitaron.</div></li>
+        <li><div><b>Vuelve a pedirlo.</b> <a href="/entrar/" style="color:var(--c-action); text-decoration: underline;">Pide otro enlace aquí</a>.</div></li>
+      </ol>
+    </div>
+
+    <p class="alta__disclaimer" style="margin-top: var(--s-6);">
+      ¿Sigue sin llegar? Escríbenos a
+      <a href="mailto:soporte@werclub.com" style="color:var(--c-action); text-decoration: underline;">soporte@werclub.com</a>
+      y te damos acceso a mano.
+    </p>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__row">
+    <a href="/" class="nav__logo site-footer__logo">
+      <span class="nav__logo-badge">wc</span>
+      <span><b>we'r</b> club</span>
+    </a>
+    <ul class="site-footer__links">
+      <li><a href="/legal/privacidad/">Privacidad</a></li>
+      <li><a href="/legal/condiciones/">Condiciones</a></li>
+      <li><a href="/legal/contacto/">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+  const email = new URLSearchParams(location.search).get('email');
+  if (email) document.getElementById('sent-email').textContent = email;
+</script>
+</body>
+</html>

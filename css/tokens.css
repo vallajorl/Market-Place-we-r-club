@@ -1,0 +1,59 @@
+:root {
+  --c-orange: #F39200;
+  --c-orange-hover: #D97E00;
+  --c-teal: #107070;
+  --c-teal-dark: #0C5A5A;
+  --c-cobalt: #2E55D4;
+  --c-cobalt-hover: #2244B8;
+
+  /* Semantic: 10% CTA color — only buttons that drive conversion */
+  --c-action: var(--c-teal);
+  --c-action-hover: var(--c-teal-dark);
+  --c-ink: #0A0A0A;
+  --c-ink-soft: #2A2A2A;
+  --c-mute: #5E6672;
+  --c-line: #E6E8EC;
+  --c-surface: #FFFFFF;
+  --c-surface-2: #F6F7F9;
+  --c-chip-bg: #CFE8E8;
+  --c-chip-ink: #0C5A5A;
+
+  --ff-display: "Inter", system-ui, -apple-system, sans-serif;
+  --ff-body: "Inter", system-ui, -apple-system, sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+
+  --fs-display: clamp(2.25rem, 4.5vw, 3.75rem);
+  --fs-h1: clamp(1.75rem, 3vw, 2.5rem);
+  --fs-h2: clamp(1.375rem, 2.2vw, 1.875rem);
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --fs-small: 0.875rem;
+  --fs-tiny: 0.75rem;
+
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+  --s-9: 96px;
+
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 20px;
+  --r-xl: 28px;
+  --r-pill: 999px;
+
+  --shadow-card: 0 1px 2px rgba(10, 10, 10, 0.04), 0 4px 16px rgba(10, 10, 10, 0.04);
+  --shadow-mockup: 0 12px 40px rgba(10, 10, 10, 0.18), 0 2px 8px rgba(10, 10, 10, 0.08);
+
+  --container: 1250px;
+  --nav-h: 72px;
+}

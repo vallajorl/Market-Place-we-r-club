@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrar — we'r club</title>
+  <meta name="description" content="Entra a we'r club sin contraseñas. Te mandamos un enlace mágico al email y accedes al panel de tu club.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
+  <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="/assets/favicon/site.webmanifest">
+  <meta name="theme-color" content="#FF9500">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="we'r club">
+  <meta property="og:image" content="https://werclub.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1600">
+  <meta property="og:image:height" content="1000">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap">
+  <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a href="/" class="nav__logo">
+      <span class="nav__logo-badge">wc</span>
+      <span class="nav__logo-text"><b>we'r</b> <span>club</span></span>
+    </a>
+    <nav>
+      <ul class="nav__links">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/producto/">Producto</a></li>
+        <li><a href="/para-clubs/">Para clubs</a></li>
+        <li><a href="/precios/">Precios</a></li>
+        <li><a href="/entrar/" aria-current="page">Entrar</a></li>
+      </ul>
+    </nav>
+    <div class="nav__cta">
+      <a href="/alta" class="btn btn--primary">Prueba gratis</a>
+      <button class="nav__toggle" aria-label="Abrir menú">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="login">
+  <div class="container login__wrap">
+
+    <div class="login__card">
+      <span class="chip">Entrar</span>
+      <h1 class="login__title">Entra a tu <em>club</em>.</h1>
+      <p class="login__lead">Sin contraseñas. Escribe tu email y te mandamos un enlace para entrar al instante.</p>
+
+      <form class="login__form" id="login-form" novalidate>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input type="email" id="f-email" name="email" required placeholder="jorge@tuclub.es" autocomplete="email" autofocus>
+          <p class="field__hint">El mismo con el que creaste el club o con el que te invitaron.</p>
+        </div>
+
+        <button type="submit" class="btn btn--primary login__submit">Mándame el enlace</button>
+
+        <div class="alta__error" id="login-error" role="alert"></div>
+      </form>
+
+      <p class="login__disclaimer">
+        ¿Aún no tienes club? <a href="/alta" class="login__link">Crea uno en 2 minutos</a>.
+      </p>
+    </div>
+
+    <aside class="login__aside">
+      <div class="login__perk">
+        <span class="login__perk-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 118 0v4"/></svg>
+        </span>
+        <div>
+          <b>Sin contraseñas</b>
+          <span>Un enlace con un solo uso al email que nos diste.</span>
+        </div>
+      </div>
+      <div class="login__perk">
+        <span class="login__perk-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></svg>
+        </span>
+        <div>
+          <b>Al instante</b>
+          <span>El correo llega en menos de un minuto.</span>
+        </div>
+      </div>
+      <div class="login__perk">
+        <span class="login__perk-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4v5c0 5-3.5 8-8 10-4.5-2-8-5-8-10V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        </span>
+        <div>
+          <b>Más seguro</b>
+          <span>Nada que robar ni que olvidar.</span>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+  <div class="container site-footer__row">
+    <a href="/" class="nav__logo site-footer__logo">
+      <span class="nav__logo-badge">wc</span>
+      <span><b>we'r</b> club</span>
+    </a>
+    <ul class="site-footer__links">
+      <li><a href="/legal/privacidad/">Privacidad</a></li>
+      <li><a href="/legal/condiciones/">Condiciones</a></li>
+      <li><a href="/legal/contacto/">Contacto</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="../js/nav.js" defer></script>
+<script src="../js/entrar.js" defer></script>
+</body>
+</html>
