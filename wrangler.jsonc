@@ -1,0 +1,14 @@
+// Configuración de Cloudflare Workers para werclub.com.
+// La web es estática: Cloudflare sirve los archivos de esta carpeta tal cual, sin build.
+// Lo que no debe publicarse está en .assetsignore.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "market-place-we-r-club",
+  "compatibility_date": "2026-11-17",
+  "assets": {
+    "directory": ".",
+    "html_handling": "auto-trailing-slash"
+  },
+  // Necesario para las previsualizaciones de cada pull request (npx wrangler preview).
+  "previews": {}
+}

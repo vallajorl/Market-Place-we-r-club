@@ -1,0 +1,13 @@
+# Archivos del repo que Cloudflare NO debe publicar en la web.
+.git
+.gitignore
+.assetsignore
+.claude
+wrangler.jsonc
+node_modules
+_partials
+docs
+reviews
+tools
+serve.ps1
+README.md
