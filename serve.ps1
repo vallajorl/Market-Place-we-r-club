@@ -19,7 +19,10 @@ $mime = @{
 
 $listener = New-Object System.Net.HttpListener
 $listener.Prefixes.Add("http://localhost:$Port/")
-$listener.Start()
+try { $listener.Start() } catch {
+  Write-Host "No se puede usar el puerto $Port. Quizá ya hay otro servidor abierto en http://localhost:$Port/." -ForegroundColor Red
+  exit 1
+}
 Write-Host "Sirviendo $Root en http://localhost:$Port/  (Ctrl+C para parar)"
 
 try {
