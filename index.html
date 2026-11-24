@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>we'r club — Tu club, en orden. Y en el bolsillo.</title>
   <meta name="description" content="Material, socios, cuotas y avisos en una sola app. Sin grupos de chat infinitos ni hojas de cálculo perdidas.">
+<!-- partial:head -->
   <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png">
@@ -21,35 +22,36 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="/css/main.css">
+<!-- /partial:head -->
 </head>
 <body>
 
+<!-- partial:header -->
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 <header class="site-header">
   <div class="container nav">
-    <a href="/" class="nav__logo">
-      <span class="nav__logo-badge">wc</span>
-      <span class="nav__logo-text"><b>we'r</b> <span>club</span></span>
-    </a>
-    <nav>
+    <a href="/" class="nav__logo" aria-label="we'r club, ir al inicio"></a>
+    <nav class="nav__menu" id="nav-menu" aria-label="Principal">
       <ul class="nav__links">
-        <li><a href="/" aria-current="page">Inicio</a></li>
         <li><a href="/producto/">Producto</a></li>
         <li><a href="/para-clubs/">Para clubs</a></li>
         <li><a href="/precios/">Precios</a></li>
-        <li><a href="/entrar/">Entrar</a></li>
+        <li><a href="/contacto/">Contacto</a></li>
       </ul>
+      <div class="nav__actions">
+        <a href="/entrar/" class="nav__login">Entrar</a>
+        <a href="/alta/" class="btn btn--primary">Prueba gratis</a>
+      </div>
     </nav>
-    <div class="nav__cta">
-      <a href="/alta" class="btn btn--primary">Prueba gratis</a>
-      <button class="nav__toggle" aria-label="Abrir menú">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-      </button>
-    </div>
+    <button class="nav__toggle" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
   </div>
 </header>
+<!-- /partial:header -->
 
-<main>
+<main id="contenido">
 
 <section class="hero">
   <div class="container hero__grid">
@@ -57,8 +59,8 @@
       <h1 class="hero__title">Tu <em>club</em>, en orden.<br>Y en el bolsillo.</h1>
       <p class="hero__lead">Gestiona todo tu club desde una sola app. Saca la información importante de los chats infinitos y mejora la experiencia de tus socios.</p>
       <div class="hero__ctas">
-        <a href="/alta" class="btn btn--primary">Prueba gratis 30 días</a>
-        <a href="/demo" class="btn btn--link">Ver una demo de 2 minutos</a>
+        <a href="/alta/" class="btn btn--primary">Prueba gratis 30 días</a>
+        <a href="#modulos" class="btn btn--link">Ver qué incluye</a>
       </div>
     </div>
 
@@ -109,6 +111,110 @@
   </div>
 </section>
 
+<!-- EL PROBLEMA: antes / después -->
+<section class="p4c-section p4c-section--alt">
+  <div class="container">
+    <div class="p4c-section__head">
+      <span class="p4c-section__eyebrow">El cambio</span>
+      <h2 class="p4c-section__title">Lo que entra y lo que sale.</h2>
+      <p class="p4c-section__lead">Nadie extraña las hojas de cálculo con contraseña ni el grupo de WhatsApp con 180 personas. El cambio se nota en semanas.</p>
+    </div>
+
+    <div class="compare">
+      <div class="compare__col compare__col--before">
+        <span class="compare__label">Antes</span>
+        <h3 class="compare__title">Un lío repartido en diez sitios.</h3>
+        <ul class="compare__list">
+          <li>Excel con los socios en el correo del secretario de hace dos juntas.</li>
+          <li>Grupo de WhatsApp con 180 personas y la mitad silenciado.</li>
+          <li>Cuaderno del material con tachones y "¿quién se lo llevó?".</li>
+          <li>Transferencias a mano y recordatorios por mensaje directo.</li>
+          <li>Memoria de quién vino a cada salida.</li>
+        </ul>
+      </div>
+
+      <div class="compare__arrow" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </div>
+
+      <div class="compare__col compare__col--after">
+        <span class="compare__label">Con <em>we'r club</em></span>
+        <h3 class="compare__title">Una app, cuatro personas tranquilas.</h3>
+        <ul class="compare__list">
+          <li>Base de socios única, viva y editable desde el móvil.</li>
+          <li>Tablón oficial y chats por actividad, cada mensaje en su sitio.</li>
+          <li>Material con QR: sabes qué tiene cada socio y cuándo lo devuelve.</li>
+          <li>Cuotas con enlace de pago, justificante y conciliación.</li>
+          <li>Historial de asistencia, hitos y ranking de participación.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PRODUCTO: los módulos de un vistazo -->
+<section class="p4c-section" id="modulos">
+  <div class="container">
+    <div class="p4c-section__head">
+      <span class="p4c-section__eyebrow">Producto</span>
+      <h2 class="p4c-section__title">Todo el club, en una sola app.</h2>
+      <p class="p4c-section__lead">Seis piezas que encajan entre sí. Activa las que uséis y deja el resto para cuando haga falta.</p>
+    </div>
+    <div class="modules">
+      <a class="module" href="/producto/#socios">
+        <span class="module__icon module__icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.5 3-6 6.5-6s6.5 2.5 6.5 6"/><path d="M16 4.5a3.5 3.5 0 010 7M18 14c2 .8 3.5 3 3.5 6"/></svg></span>
+        <h3 class="module__title">Socios</h3>
+        <p class="module__body">Altas, categorías, cuotas con enlace de pago y quién está al día.</p>
+      </a>
+      <a class="module" href="/producto/#material">
+        <span class="module__icon module__icon--orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3zM20 14v.01M14 20h.01M17 20h4v-3"/></svg></span>
+        <h3 class="module__title">Material</h3>
+        <p class="module__body">Un QR por pieza: quién lo tiene, hasta cuándo y cuándo caduca el EPI.</p>
+      </a>
+      <a class="module" href="/producto/#actividades">
+        <span class="module__icon module__icon--cobalt"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20l5-9 4 6 3-5 6 8H3z"/><circle cx="17" cy="6" r="2"/></svg></span>
+        <h3 class="module__title">Actividades</h3>
+        <p class="module__body">Salidas con inscripción, lista de espera, coche compartido y asistencia.</p>
+      </a>
+      <a class="module" href="/producto/#comunidad">
+        <span class="module__icon module__icon--ink"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8 8 0 01-11.6 7.1L3 21l1.9-6.4A8 8 0 1121 12z"/></svg></span>
+        <h3 class="module__title">Comunidad</h3>
+        <p class="module__body">Tablón oficial, un chat por actividad y buzón del socio. Adiós a los grupos infinitos.</p>
+      </a>
+      <a class="module" href="/producto/#merchandising">
+        <span class="module__icon module__icon--orange"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3l-5 3 2 4 2-1v12h10V9l2 1 2-4-5-3a4 4 0 01-8 0z"/></svg></span>
+        <h3 class="module__title">Merchandising</h3>
+        <p class="module__body">La tienda del club: encargos, tallas, stock y recogidas.</p>
+      </a>
+      <a class="module" href="/producto/#escuela">
+        <span class="module__icon module__icon--teal"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 9l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></span>
+        <h3 class="module__title">Escuela</h3>
+        <p class="module__body">Cursos con plazas, asistencia por sesión y certificado al terminar.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- PARA QUIÉN -->
+<section class="p4c-section p4c-section--alt">
+  <div class="container audience">
+    <div>
+      <span class="p4c-section__eyebrow">Para quién</span>
+      <h2 class="p4c-section__title">De la peña de amigos a la federación.</h2>
+      <p class="audience__lead">Si hay junta, cuotas y gente que se junta a hacer algo, encaja. La app pinta distinto para el socio, el monitor, la tesorería y la junta.</p>
+      <a href="/para-clubs/" class="btn btn--link">Ver cómo encaja en tu club</a>
+    </div>
+    <ul class="audience__list">
+      <li><b>Montaña y naturaleza</b><span>EPI con caducidad, niveles y coche compartido.</span></li>
+      <li><b>Deportivo</b><span>Entrenos recurrentes, ranking y cuotas por temporada.</span></li>
+      <li><b>Peña y cultural</b><span>Eventos puntuales, cuota por acto y tablón oficial.</span></li>
+      <li><b>Vecinal</b><span>Convocatorias, firma oficial y confirmación de lectura.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- CÓMO EMPEZAR -->
 <section class="steps">
   <div class="container">
     <h2 class="steps__title">Cómo empezar</h2>
@@ -138,29 +244,65 @@
   </div>
 </section>
 
+<!-- PRECIOS (avance) -->
+<section class="price-teaser">
+  <div class="container price-teaser__row">
+    <div>
+      <h2 class="price-teaser__title">Un plan según el tamaño de tu club.</h2>
+      <p class="price-teaser__lead">Peña, Club o Federación. Empiezas con 30 días gratis y sin tarjeta, y cambias de plan cuando quieras.</p>
+    </div>
+    <a href="/precios/" class="btn btn--outline">Ver precios</a>
+  </div>
+</section>
+
 </main>
 
 <section class="footer-cta">
   <div class="container footer-cta__row">
     <h2 class="footer-cta__title">Somos <em>club</em>.</h2>
-    <a href="/alta" class="btn btn--primary">Empieza ahora</a>
+    <a href="/alta/" class="btn btn--primary">Empieza ahora</a>
   </div>
 </section>
 
+<!-- partial:footer -->
 <footer class="site-footer">
-  <div class="container site-footer__row">
-    <a href="/" class="nav__logo site-footer__logo">
-      <span class="nav__logo-badge">wc</span>
-      <span><b>we'r</b> club</span>
-    </a>
-    <ul class="site-footer__links">
-      <li><a href="/legal/privacidad/">Privacidad</a></li>
-      <li><a href="/legal/condiciones/">Condiciones</a></li>
-      <li><a href="/legal/contacto/">Contacto</a></li>
-    </ul>
+  <div class="container site-footer__grid">
+    <div class="site-footer__brand">
+      <a href="/" class="nav__logo site-footer__logo" aria-label="we'r club, ir al inicio"></a>
+      <p>La app de tu club: socios, material, actividades y avisos en un solo sitio.</p>
+    </div>
+    <nav class="site-footer__col" aria-label="Producto">
+      <p class="site-footer__title">Producto</p>
+      <ul>
+        <li><a href="/producto/#socios">Socios</a></li>
+        <li><a href="/producto/#material">Material</a></li>
+        <li><a href="/producto/#actividades">Actividades</a></li>
+        <li><a href="/producto/#comunidad">Comunidad</a></li>
+        <li><a href="/producto/#merchandising">Merchandising</a></li>
+        <li><a href="/producto/#escuela">Escuela</a></li>
+      </ul>
+    </nav>
+    <nav class="site-footer__col" aria-label="Clubs">
+      <p class="site-footer__title">Clubs</p>
+      <ul>
+        <li><a href="/para-clubs/">Para clubs</a></li>
+        <li><a href="/precios/">Precios</a></li>
+        <li><a href="/alta/">Crear un club</a></li>
+        <li><a href="/entrar/">Entrar</a></li>
+      </ul>
+    </nav>
+    <nav class="site-footer__col" aria-label="Ayuda y legal">
+      <p class="site-footer__title">Ayuda</p>
+      <ul>
+        <li><a href="/contacto/">Contacto</a></li>
+        <li><a href="/legal/privacidad/">Privacidad</a></li>
+        <li><a href="/legal/condiciones/">Condiciones</a></li>
+      </ul>
+    </nav>
   </div>
 </footer>
+<script src="/js/nav.js" defer></script>
+<!-- /partial:footer -->
 
-<script src="js/nav.js" defer></script>
 </body>
 </html>
